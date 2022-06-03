@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LabouriousLayout Challenge (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "LabouriousLayout Challenge (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

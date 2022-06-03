@@ -1,0 +1,76 @@
+﻿<Window
+    x:Class="LabouriousLayout_Challenge.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LabouriousLayout_Challenge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Margin="10,10,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--<RelativePanel Grid.Column="1" Grid.RowSpan="3">
+            <SplitView Name="NavigationBar" Width="200" OpenPaneLength="100" DisplayMode="CompactOverlay" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True">
+                <SplitView.Pane>
+                    <StackPanel>
+                        <Rectangle Fill="Beige" Height="50"/>
+                        <Rectangle Fill="Purple" Height="50"/>
+                        <Rectangle Fill="Turquoise" Height="50"/>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <StackPanel>
+                        <Rectangle Fill="AntiqueWhite" Height="50"/>
+                        <Rectangle Fill="DimGray" Height="50"/>
+                        <Rectangle Fill="Navy" Height="50"/>
+                    </StackPanel>
+                </SplitView.Content>
+            </SplitView>
+            <Button x:Name="NavigatioBarButton" Content="Click" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWith="NavigationBar" Click="NavigatioBarButton_Click"/>
+            <Rectangle Name = "PanelHeader"  Fill="Red" MinHeight="50" Width="200" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True"/>
+            <Rectangle Name = "Panel"  Fill="Blue" MinHeight="700" Width="200" RelativePanel.AlignHorizontalCenterWith="PanelHeader" RelativePanel.Below="PanelHeader" RelativePanel.AlignBottomWithPanel="True"/>
+            <Rectangle Name = "SidePanel" Fill="Aqua" MinHeight="750" Width="50" RelativePanel.LeftOf="PanelHeader" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True"/>
+        </RelativePanel>-->
+        <StackPanel Grid.Row="0" HorizontalAlignment="Left">
+            <TextBlock x:Name="Title1" Text="Title1" FontSize="24" FontWeight="Bold"/>
+            <StackPanel HorizontalAlignment="Center" Margin="200,0,0,0">
+                <TextBlock x:Name="Text1"  TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis malesuada ligula. Donec mattis nibh a enim vehicula, et dapibus lacus congue. Aliquam auctor ultrices aliquam. Praesent feugiat non ex sit amet scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut in quam felis.</TextBlock>
+                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+                    <Rectangle Fill="Green" Width="100" Height="30"/>
+                    <Rectangle Fill="Black" Width="100" Height="30"/>
+                    <Rectangle Fill="Orange" Width="100" Height="30"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Left">
+            <TextBlock x:Name="Title2" Text="Title2" FontSize="24" FontWeight="Bold"/>
+            <StackPanel HorizontalAlignment="Center" Margin="200,0,0,0">
+                <TextBlock x:Name="Text2"  TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis malesuada ligula. Donec mattis nibh a enim vehicula, et dapibus lacus congue. Aliquam auctor ultrices aliquam. Praesent feugiat non ex sit amet scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut in quam felis.</TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Rectangle Fill="Blue" Width="100" Height="30"/>
+                    <Rectangle Fill="Aqua" Width="100" Height="30"/>
+                    <Rectangle Fill="Brown" Width="100" Height="30"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Left">
+            <TextBlock x:Name="Title3" Text="Title3" FontSize="24" FontWeight="Bold"/>
+            <StackPanel HorizontalAlignment="Center" Margin="200,0,0,0">
+                <TextBlock x:Name="Text3"  TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis malesuada ligula. Donec mattis nibh a enim vehicula, et dapibus lacus congue. Aliquam auctor ultrices aliquam. Praesent feugiat non ex sit amet scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut in quam felis.</TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <Rectangle Fill="Beige" Width="100" Height="30"/>
+                    <Rectangle Fill="Navy" Width="100" Height="30"/>
+                    <Rectangle Fill="Yellow" Width="100" Height="30"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+</Window>
